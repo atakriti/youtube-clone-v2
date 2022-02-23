@@ -236,7 +236,7 @@ main .videos div img {
   object-fit: cover;
 }
 main .videos div img:nth-child(1) {
-  border-bottom: 4px red solid;
+  border-bottom: 0.3vw red solid;
 }
 main .videos div p {
   padding: 2% 0%;
