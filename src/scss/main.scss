@@ -310,6 +310,7 @@ main{
                 z-index: 1;
                 background-color: white;
                 line-height: 10vw;
+                animation: drop 2s ;
                 hr{
                     margin: 4% 0%;
                 }
@@ -330,6 +331,16 @@ main{
                 h4{
                     font-size: 4vw;
                     margin-bottom: 7%;
+                }
+            }
+            @keyframes drop {
+                from{
+                    height: 0;
+                    opacity: 0;
+                }
+                to{
+                    height: 100vh;
+                    opacity: 1;
                 }
             }
            .hamburger{
