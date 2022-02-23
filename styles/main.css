@@ -275,7 +275,7 @@ main .videos div small {
     display: block;
   }
   header .left .mobile-list {
-    border: 1px red solid;
+    padding-top: 8%;
     display: none;
     height: 100vh;
     width: 100%;
@@ -288,14 +288,20 @@ main .videos div small {
     background-color: white;
     line-height: 10vw;
   }
+  header .left .mobile-list hr {
+    margin: 4% 0%;
+  }
   header .left .mobile-list a {
     display: block;
     font-size: 7vw;
     padding-left: 10%;
-    width: 100%;
+    width: 80%;
     color: black;
     margin-top: 5%;
     text-decoration: none;
+  }
+  header .left .mobile-list a i {
+    margin-right: 10%;
   }
   header .left .mobile-list h4 {
     font-size: 4vw;
