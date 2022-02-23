@@ -287,6 +287,7 @@ main .videos div small {
     z-index: 1;
     background-color: white;
     line-height: 10vw;
+    animation: drop 2s;
   }
   header .left .mobile-list hr {
     margin: 4% 0%;
@@ -306,6 +307,16 @@ main .videos div small {
   header .left .mobile-list h4 {
     font-size: 4vw;
     margin-bottom: 7%;
+  }
+  @keyframes drop {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      height: 100vh;
+      opacity: 1;
+    }
   }
   header .left .hamburger {
     width: 20%;
