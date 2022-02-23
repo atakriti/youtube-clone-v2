@@ -395,8 +395,8 @@ main .videos div small {
     font-size: 1.5vw;
   }
   main .videos div::after {
-    width: 4vw;
-    height: 2vw;
+    width: 5vw;
+    height: 3vw;
     font-size: 2vw;
     bottom: 25%;
   }
