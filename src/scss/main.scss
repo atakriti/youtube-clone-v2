@@ -199,6 +199,7 @@ main{
         height: 2.5vw;
         border: none;
         cursor: pointer;
+        outline: none;
         
     }
 }
@@ -260,7 +261,7 @@ main{
             object-fit: cover;
 
             &:nth-child(1){
-                border-bottom: 4px red solid;
+                border-bottom: 0.3vw red solid;
             }
              
             
