@@ -30,6 +30,9 @@ header .left {
   justify-content: space-around;
   align-items: center;
 }
+header .left .mobile-list {
+  display: none;
+}
 header .left .hamburger {
   min-width: 4vw;
   height: 1vw;
@@ -255,7 +258,7 @@ main .videos div small {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body {
     grid-template-rows: 8vw;
   }
@@ -267,6 +270,36 @@ main .videos div small {
   header .left {
     width: 40%;
     height: 100%;
+  }
+  header .left:hover .mobile-list {
+    display: block;
+  }
+  header .left .mobile-list {
+    border: 1px red solid;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    line-height: 10vw;
+  }
+  header .left .mobile-list a {
+    display: block;
+    font-size: 7vw;
+    padding-left: 10%;
+    width: 100%;
+    color: black;
+    margin-top: 5%;
+    text-decoration: none;
+  }
+  header .left .mobile-list h4 {
+    font-size: 4vw;
+    margin-bottom: 7%;
   }
   header .left .hamburger {
     width: 20%;
@@ -290,24 +323,7 @@ main .videos div small {
   }
 
   aside {
-    opacity: 0;
-    padding-top: 8%;
-    top: 0vw;
-    width: 100%;
-    overflow: scroll;
-    z-index: 1;
-    transition: 0.8s;
-  }
-  aside:hover {
-    opacity: 1;
-  }
-  aside a {
-    font-size: 3vw;
-    width: 100%;
-  }
-  aside h4 {
-    font-size: 4vw;
-    margin-bottom: 7%;
+    display: none;
   }
 
   main {
