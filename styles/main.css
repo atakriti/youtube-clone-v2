@@ -1,3 +1,19 @@
+.black-bg {
+  background-color: black;
+}
+
+.white-f {
+  color: white;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.black-f {
+  color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -84,7 +100,7 @@ header .middle button {
   cursor: pointer;
 }
 header .right {
-  width: 15%;
+  width: 18%;
   height: 100%;
   font-size: 1.2vw;
   display: flex;
@@ -93,6 +109,58 @@ header .right {
 }
 header .right i {
   cursor: pointer;
+}
+header .right .dark-light {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+}
+header .right .dark-light h4 {
+  font-size: 1vw;
+  margin-right: 2%;
+  width: 100%;
+  white-space: nowrap;
+}
+header .right .dark-light .color {
+  position: relative;
+}
+header .right .dark-light .color input {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+}
+header .right .dark-light .color input:checked + .toggle {
+  background-color: blue;
+}
+header .right .dark-light .color input:checked + .toggle::after {
+  transition: 0.7s;
+  left: 60%;
+}
+header .right .dark-light .color .toggle {
+  height: 1rem;
+  position: absolute;
+  border-radius: 20px;
+  top: 35%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+}
+header .right .dark-light .color .toggle::after {
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  top: 15%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transition: 0.7s;
 }
 
 aside {
@@ -333,10 +401,13 @@ main .videos div small {
     display: none;
   }
   header .right {
-    width: 50%;
+    width: 35%;
   }
   header .right i {
     font-size: 3vw;
+  }
+  header .right .dark-light h4 {
+    font-size: 2vw;
   }
 
   aside {
