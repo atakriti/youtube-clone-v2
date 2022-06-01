@@ -6,7 +6,6 @@ btn.addEventListener("click", () => {
 });
 
 // =================================
-let inputMiddle = document.querySelector("input[type='search']")
 let toggle = document.querySelector("#themesColor");
 let body = document.querySelector("body");
 let header = document.querySelector("header");
@@ -43,8 +42,7 @@ let theme = () => {
     body.classList.add("black-bg")
     header.classList.add("black-bg")
     side.classList.add("black-bg")
-      menu.classList.add("black-bg")
-      inputMiddle.style.color = "white"
+    menu.classList.add("black-bg")
     // main.classList.add("black-bg")
     main.style.backgroundColor = "black"
     hamburger.forEach((p) => (p.classList.add("black-bg")));
@@ -61,9 +59,7 @@ let theme = () => {
     body.classList.remove("black-bg")
     header.classList.remove("black-bg")
     side.classList.remove("black-bg")
-      menu.classList.remove("black-bg")
-      inputMiddle.style.color = "black"
-      
+    menu.classList.remove("black-bg")
     // main.classList.remove("black-bg")
     main.style.backgroundColor = "white"
       
