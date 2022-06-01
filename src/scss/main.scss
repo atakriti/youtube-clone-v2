@@ -1,3 +1,4 @@
+@import "./classes";
 *{
     margin: 0;
     padding: 0;
@@ -89,16 +90,142 @@ header{
 }
 // right
 .right{
-    width: 15%;
+    width: 18%;
     height: 100%;
      font-size: 1.2vw;
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
     i{
         cursor: pointer;
-      
+    }
+    .dark-light{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        h4{
+            font-size: 1vw;
+            margin-right: 2%;
+        }
+        .color{
+            position: relative;
+            input{
+                width: 2rem;
+                height: 2rem;
+                position: relative;
+                 z-index: 1;
+
+                 opacity: 0;
+            //     &::before{
+            //         content: "";
+            //         background-color: green;
+            //         top: 25%;
+            //         right: 0;
+            //         bottom: 0;
+            //         left: 0;
+            //         height: 1rem;
+            //         position: absolute;
+            //         border-radius: 20px;
+            //     }
+            //     &::after{
+            //       content: "";
+            //       background-color: white;
+            //       border-radius: 50%;
+            //       width: 0.7rem;
+            //       height: 0.7rem;
+            //       top: 32%;
+            //       right: 0;
+            //       bottom: 0;
+            //       left: 0;
+            //       // transform: translate(0 ,50%);
+            //       position: absolute;
+                 
+            //     }
+            //     &:checked{
+            //         &::before{
+            //             background-color: blue;
+            //         }
+            //      &::after{
+            //       top: 32%;
+            //       right: 0;
+            //       bottom: 0;
+            //       left: 60%;
+            //      }
+                      
+            //       }
+            //   &:checked{
+            //       .toggle{
+                     
+            //           &::after{
+            //             left: 50%;
+            //           }
+            //       }
+            //   }
+            &:checked + .toggle{
+                background-color: blue;
+                &::after{
+                    transition: 0.7s;
+                    left: 60%;
+                }
+            }
+              }
+              .toggle{
+                  height: 1rem;
+                          position: absolute;
+                          border-radius: 20px;
+                  top: 35%;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  background-color: green;
+                //   border-radius: 20px;
+                &::after{
+                        content: "";
+                        background-color: white;
+                        border-radius: 50%;
+                        width: 0.7rem;
+                        height: 0.7rem;
+                        top: 15%;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        // transform: translate(0 ,50%);
+                        position: absolute;
+                        transition: 0.7s;
+                      }
+              }
+            //    &::before{
+            //         content: "";
+            //         background-color: green;
+            //         top: 0%;
+            //         right: 0;
+            //         bottom: 0;
+            //         left: 0;
+            //         // height: 1rem;
+            //         position: absolute;
+            //         border-radius: 20px;
+            //         z-index: 1;
+            //     }
+            //     &::after{
+            //       content: "";
+            //       background-color: white;
+            //       border-radius: 50%;
+            //       width: 0.7rem;
+            //       height: 0.7rem;
+            //       top: 32%;
+            //       right: 0;
+            //       bottom: 0;
+            //       left: 0;
+            //       // transform: translate(0 ,50%);
+            //       position: absolute;
+            //       z-index: 3;
+                 
+            //     }
+             
+
+        }
+        
     }
 }
 }
@@ -437,3 +564,5 @@ main{
     }
     
 }
+
+// ==============================
