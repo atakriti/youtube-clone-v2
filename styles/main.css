@@ -126,10 +126,11 @@ header .right .dark-light .color {
   position: relative;
 }
 header .right .dark-light .color input {
-  width: 2rem;
-  height: 2rem;
+  width: 2vw;
+  height: 2vw;
   position: relative;
   z-index: 1;
+  cursor: pointer;
   opacity: 0;
 }
 header .right .dark-light .color input:checked + .toggle {
@@ -140,7 +141,7 @@ header .right .dark-light .color input:checked + .toggle::after {
   left: 60%;
 }
 header .right .dark-light .color .toggle {
-  height: 1rem;
+  height: 1vw;
   position: absolute;
   border-radius: 20px;
   top: 35%;
@@ -153,8 +154,8 @@ header .right .dark-light .color .toggle::after {
   content: "";
   background-color: white;
   border-radius: 50%;
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.7vw;
+  height: 0.7vw;
   top: 15%;
   right: 0;
   bottom: 0;
@@ -401,13 +402,25 @@ main .videos div small {
     display: none;
   }
   header .right {
-    width: 35%;
+    width: 40%;
   }
   header .right i {
     font-size: 3vw;
   }
   header .right .dark-light h4 {
     font-size: 2vw;
+  }
+  header .right .dark-light .color input {
+    width: 4vw;
+    height: 4vw;
+  }
+  header .right .dark-light .color .toggle {
+    height: 50%;
+    top: 25%;
+  }
+  header .right .dark-light .color .toggle::after {
+    width: 1.4vw;
+    height: 1.4vw;
   }
 
   aside {
