@@ -103,10 +103,13 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 40%;
+        width: 45%;
         h4{
             font-size: 1vw;
             margin-right: 2%;
+            width: 100%;
+            white-space: nowrap;
+           
         }
         .color{
             position: relative;
@@ -488,9 +491,14 @@ main{
             display: none;
         }
         .right{
-            width: 50%;
+            width: 35%;
             i{
                 font-size: 3vw;
+            }
+            .dark-light{
+                h4{
+                    font-size: 2vw;
+                }
             }
         }
     }
